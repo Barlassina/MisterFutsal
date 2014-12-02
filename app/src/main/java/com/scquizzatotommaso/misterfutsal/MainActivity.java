@@ -1,6 +1,7 @@
 package com.scquizzatotommaso.misterfutsal;
 
 import android.app.Activity;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -37,6 +38,8 @@ public class MainActivity extends ActionBarActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
@@ -62,11 +65,9 @@ public class MainActivity extends ActionBarActivity
                 mTitle = getString(R.string.title_section1);
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getString(R.string.title_section1);
                 break;
-            case 3:
-                mTitle = getString(R.string.title_section3);
-                break;
+
         }
     }
 
